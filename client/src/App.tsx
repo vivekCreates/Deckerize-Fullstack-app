@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/message")
+        const response = await fetch("http://13.61.35.109:4000/api/message")
         if (!response.ok) {
           throw new Error("Failed to fetch message")
         }
