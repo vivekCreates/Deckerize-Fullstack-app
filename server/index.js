@@ -13,7 +13,6 @@ app.use(cors(
             process.env.FRONTEND_URL,
             "http://localhost:5174",
             "http://localhost:5173",
-            "http://13.61.35.109:3000/"
         ],
         credentials:true,
     }
