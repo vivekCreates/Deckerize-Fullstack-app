@@ -10,10 +10,9 @@ app.use(express.urlencoded({extended:true}));
 app.use(cors(
     {
         origin:[
-            process.env.FRONTEND_URL,
             "http://localhost:5174",
             "http://localhost:5173",
-            "http://13.61.35.109:3000/"
+            "http://13.61.35.109:3000"
         ],
         credentials:true,
     }
@@ -28,7 +27,7 @@ app.get("/api/message",(req,res)=>{
 })
 
 
-const PORT = process.env.PORT || 4000;
+const PORT = 4000;
 app.listen(PORT,"0.0.0.0",()=>{
     console.log(`Server is running on http://localhost:${PORT}`);
 })
